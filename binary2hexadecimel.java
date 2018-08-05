@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class hex{
 public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
+System.out.println("enter binary number");
 String s=sc.nextLine();
-System.out.println(s.length());
 int a=s.length()%4;
 int b=4-a;
 for(int i=0;i<b;i++){
@@ -12,7 +12,6 @@ s=0+s;
 }
 int end=s.length()-1;
 int beg=end-3;
-System.out.println(s);
 int p=s.length()/4;
 String[] srr=new String[p];
 for(int i=0;i<p;i++){srr[i]="";}
@@ -22,7 +21,7 @@ srr[i]=srr[i]+s.charAt(j);
 
 }beg=beg-4;end=end-4;
 }
-for(int i=p-1;i>=0;i--){System.out.print(srr[i]+",");}
+
 String t="";
 int x=3;
 int[] decimel=new int[p];
